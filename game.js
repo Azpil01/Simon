@@ -5,7 +5,7 @@ var started = false;
 var level = 0;
 
 
-$(document).click(function() { //Le quite el keypress y le puse click
+$(document).keypress(function() { //Le quite el keypress y le puse click //Lo regresé
   if (!started) {
     $("#level-title").text("Level " + level);
     nextSequence();
